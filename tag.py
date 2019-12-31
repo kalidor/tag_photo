@@ -76,8 +76,11 @@ def next_img():
     #img_label.img = ImageTk.PhotoImage(file=next(imgs))
     current_img = next(imgs)
     print(current_img)
+    basewidth=300
     image = Image.open(current_img)
-    image = image.resize((250, 250), Image.ANTIALIAS) ## The (250, 250) is (height, width)
+    wpercent = (basewidth/float(image.size[0]))
+    hsize = int((float(image.size[1])*float(wpercent)))
+    image = image.resize((basewidth,hsize), Image.ANTIALIAS)
     img_label.img = ImageTk.PhotoImage(image)
     img_label.config(image=img_label.img)
 
