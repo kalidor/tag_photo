@@ -1,5 +1,5 @@
 # tag_photo
-Simplify tagging pictures by displaying thumbnail of each and binding key to a tagname passed as argument
+Simplify tagging pictures by displaying thumbnail of each and binding key to a tagname passed as argument, on MACOSX only at this time.
 
 # Why
 I need a tool to tag file quickly in order to sort a lot of pictures. DIsplaying a thumbnail make it more faster instead displaying the hole big pic.
